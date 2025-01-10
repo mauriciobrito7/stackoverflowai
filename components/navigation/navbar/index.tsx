@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import Theme from "./Theme";
+import { MobileNavigation } from "./MobileNavigation";
 
 function Navbar() {
   return (
@@ -13,7 +14,7 @@ function Navbar() {
           height={23}
           alt="StackOverflowAi Logo"
         />
-        <p className="h2-bold font-space-grotesk  text-dark-100 dark:text-light-900 max-sm">
+        <p className="h2-bold font-space-grotesk  text-dark-100 dark:text-light-900 max-sm hidden sm:block">
           Stackoverflow<span className="text-primary-500">AI</span>
         </p>
       </Link>
@@ -22,6 +23,7 @@ function Navbar() {
 
       <div className="flex-between gap-5">
         <Theme />
+        <MobileNavigation />
       </div>
     </nav>
   );
