@@ -1,5 +1,5 @@
 import React from "react";
-import NavLinks from "./NavLinks";
+import NavLinks from "./navbar/NavLinks";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";

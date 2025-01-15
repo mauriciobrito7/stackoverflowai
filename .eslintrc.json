@@ -4,7 +4,8 @@
     "next/typescript",
     "standard",
     "plugin:tailwindcss/recommended",
-    "prettier"
+    "prettier",
+    "eslint-config-prettier"
   ],
   "plugins": [
     "import"
@@ -39,6 +40,12 @@
           "order": "asc",
           "caseInsensitive": true
         }
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 80
       }
     ]
   },
