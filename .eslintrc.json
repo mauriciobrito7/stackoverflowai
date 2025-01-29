@@ -45,7 +45,11 @@
     "max-len": [
       "error",
       {
-        "code": 80
+        "code": 80,
+        "ignoreStrings": true, // Ignora strings
+        "ignoreTemplateLiterals": true, // Ignora template literals
+        "ignoreComments": true,
+        "ignoreUrls": true
       }
     ]
   },
